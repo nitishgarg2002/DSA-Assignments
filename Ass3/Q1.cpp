@@ -130,18 +130,27 @@ bool palindrome(string s){
 }
 int main() { 
 	string s;
+	cout<<"Enter string 1:"<<"\n";
 	cin>>s;
-	cout<<sizeofstring(s)<<endl;
-//	convertOpposite(s);
-//	cout<<s<<endl;
-//	cout<<"Vowels:"<<countVowels(s)<<endl;
-//	string s2;
-//	cin>>s2;
-//	cout<<areAnagram(s,s2);
+	
+	cout<<"Size of String1:"<<sizeofstring(s)<<endl;
+	convertOpposite(s);
+	cout<<"Opposite case:"<<s<<endl;
+	cout<<"Vowels:"<<countVowels(s)<<endl;
+	cout<<"Validation:"<<validate(s)<<endl;
 	reverse(s);
-	cout<<s<<endl;
-	cout<<validate(s)<<endl;
-	cout<<palindrome(s)<<endl;
+	cout<<"Reverse of string:"<<s<<endl;
+	cout<<"Palindrome:"<<palindrome(s)<<endl;
+	cout<<"Duplicates:"<<"\n";
 	printDups(s);
+	string s2;
+	cout<<"Enter string 2:"<<"\n";
+	cin>>s2;
+	
+	cout<<"IsAnagram:"<<areAnagram(s,s2);
+	
+	
+	
+	
 }
 
