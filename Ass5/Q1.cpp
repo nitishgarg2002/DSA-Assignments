@@ -15,14 +15,11 @@ vector<int> maxArray(int arr[],int n,int k) {
       if(pq.size()==k)
         res.push_back(maxx);
         pq.pop();
-        
        if(i<n)
         {
         pq.push(arr[i]);
         i++;
         }
-        
-       
     }
     return res;
 
